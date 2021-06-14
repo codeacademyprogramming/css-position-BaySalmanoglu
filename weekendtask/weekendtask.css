@@ -70,17 +70,18 @@ button{
 		pointer-events: none;
 		top: 9px;
 		left: 12px;
-		transition: all 0.1s ease;
+		
 	}
 
 	input:focus ~ .firstlabel,
-	input:not(:focus):valid ~ .firstlabel {
-		top: -15px;
-		bottom: 0px;
-		left: 0px;
+	input:not(:focus):valid + .firstlabel {
+		top: -6px;		
+		left: 14px;
 		font-size: 11px;
 		opacity: 1;
 		color: #404040;
+        padding: 0,5px,0,5px;
+        background-color: white;
 	}
 
 
